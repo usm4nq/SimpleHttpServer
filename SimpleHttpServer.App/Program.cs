@@ -27,7 +27,9 @@ namespace SimpleHttpServer.App
                     Callable = (HttpRequest request) => {
                         return new HttpResponse()
                         {
-                            ContentAsUTF8 = "Hello from SimpleHttpServer",
+                            ContentAsUTF8 = "<h1>Welcome to Nazar HTTP Server</h1>" +
+                            "<h2>Currently Under Development</h2>" +
+                            "<label>Contact : usm4nq@gmail.com</label>",
                             ReasonPhrase = "OK",
                             StatusCode = "200"
                         };
